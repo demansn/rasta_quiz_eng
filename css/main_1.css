@@ -1,0 +1,231 @@
+/*
+    Document   : main
+    Created on : 28.03.2013, 21:36:10
+    Author     : demansn
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root {
+	display: block;
+}
+
+#app{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	font-family: Trebuchet MS;
+	background-image: url(../img/border-tile.png);
+
+}
+
+#gameArea{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 600px;
+	height: 400px;
+	margin-left: -300px;
+	margin-top: -200px;
+	background-image: url(../img/backgound.png);
+	background-size: 88% 82%;
+	background-position-x: 50%;
+	background-position-y: 50%;
+	background-repeat: no-repeat;
+}
+
+.screen{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+/* main */
+#mainScreen{
+	display: none;
+}
+
+#mainScreen h1{
+	position: absolute;
+	top: 7%;
+	width: 100%;
+	text-align: center;
+	font-size: 4em;
+}
+
+#mainScreen p {
+	position: absolute;
+	top: 23%;
+	width: 100%;
+	text-align: center;
+	font-size: 2.1em;
+}
+
+#mainScreen p + p{
+	position: absolute;
+	top: 57%;
+	width: 100%;
+	text-align: center;
+	font-size: 2.1em;
+
+}
+/* menu */
+#menuScreen{
+	display: none;
+	font-size: 1.4em;
+}
+
+#item-1{
+	position: absolute;
+	top: 80px;
+	width: 100%;
+	text-align: center;
+}
+
+#menuText{
+	position: absolute;
+	top: 115px;
+	width: 100%;
+	text-align: center;
+}
+
+#item-2{
+	position: absolute;
+	top: 150px;
+	width: 100%;
+	text-align: center;
+}
+
+#item-3{
+	position: absolute;
+	top: 180px;
+	width: 100%;
+	text-align: center;
+}
+
+#item-4{
+	position: absolute;
+	top: 210px;
+	width: 100%;
+	text-align: center;
+}
+
+#item-5{
+	position: absolute;
+	top: 240px;
+	width: 100%;
+	text-align: center;
+}
+
+#item-6{
+	position: absolute;
+	top: 275px;
+	width: 100%;
+	text-align: center;
+}
+
+/* game */
+
+#gameScreen{
+	display: block;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+#questionView{
+	position: absolute;
+	top: 70px;
+	left: 50%;
+	width: 500px;
+	height: auto;
+	margin-left: -250px;
+	line-height: 100%;
+}
+
+.answer{
+	position: relative;
+	left: 50%;
+	margin-left: -250px;
+	width: 500px;
+	margin-bottom: -5px;
+	z-index: 3;
+}
+
+#answerView-1{
+	margin-top: 25%;
+}
+/*
+#answerView-2{
+	bottom: 110px;;
+}
+
+#answerView-3{
+	bottom: 70px;
+}
+*/
+.line{
+	position: relative;
+	left: 50%;
+	margin-left: -50px;
+	text-align: center;
+	size: 1px;
+	width: 100px;
+	margin-bottom: 5px;
+	color: rgba(0,0,0,0.1);
+}
+
+#lineView-1{
+
+}
+
+#lineView-2{
+
+}
+
+.hampBorder{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+#borderView-1{
+	background-image: url(../img/border-1.png);
+	display: block;
+}
+
+#borderView-2{
+	background-image: url(../img/border-2.png);
+	display: none;
+}
+
+#backButtonView{
+	position: absolute;
+	left: 60px;
+	bottom: 60px;
+	width: 30px;
+	height: 30px;
+	z-index: 2;
+	background-image: url(../img/btn-back.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#menuButtonView{
+	position: absolute;
+	right: 60px;
+	bottom: 60px;
+	width: 35px;
+	height: 30px;
+	z-index: 2;
+	background-image: url(../img/btn-menu.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
