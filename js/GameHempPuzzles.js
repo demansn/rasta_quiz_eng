@@ -5,7 +5,7 @@ GameHempPuzzles.gui = null;
 GameHempPuzzles.questions = null;
 GameHempPuzzles.currentQuest = null;
 GameHempPuzzles.questType = null;
-GameHempPuzzles.isDemo = false;
+GameHempPuzzles.isDemo = true;
 GameHempPuzzles.isDebug = false;
 GameHempPuzzles.initDeley = 4000;
 GameHempPuzzles.data = {
@@ -308,6 +308,9 @@ GameHempPuzzles.init = function() {
 										if (navigator && navigator.splashscreen) {
 												navigator.splashscreen.hide();
 										}
+								}
+								if (GameHempPuzzles.isDemo) {
+										GameHempPuzzles.advresing.show();
 								}
 								GameHempPuzzles.gui.showMainScreen();
 
